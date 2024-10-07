@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Andrea";
+  src: url("fonts/Andrea.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mathilda"; /* Name of the font */
+  src: url("fonts/MathildaDEMO.otf") format("opentype"); /* Path to your OTF file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Penna";
+  src: url("fonts/penna.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Coco";
+  src: url("fonts/Coco-Light.ttf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Background Image Section */
+.hero {
+  height: 100vh;
+  background-image: url("images/kissing.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%; /* Position 1/3 of the way down */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content horizontally */
+  font-family: "Mathilda", sans-serif;
+}
+
+.hero h1 {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  font-family: "Andrea", sans-serif;
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Content Sections */
+.content {
+  padding: 20px 20px;
+  text-align: center;
+  background-color: #fbefce; /* Slightly transparent white */
+}
+
+.content:nth-child(odd) {
+  background-color: #fff;
+}
+
+.content h1 {
+  font-size: 1.25rem;
+  font-family: "Coco", sans-serif;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 0.8rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* New styles for sidebar */
+.sidebar {
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  width: 250px;
+  height: 100%;
+  padding: 15px;
+  z-index: 1000; /* Ensure sidebar is on top */
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-family: "Coco", sans-serif;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.75);
+  font-weight: bold;
+  display: block;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul li a:hover {
+  color: #efd58c;
+}
