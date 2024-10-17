@@ -30,6 +30,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Fixed Background Image Section */
@@ -79,6 +81,7 @@ body {
 .content {
   padding: 20px 20px;
   text-align: center;
+  height: 400px;
   background-color: #fbefce; /* Slightly transparent white */
 }
 
@@ -86,49 +89,129 @@ body {
   background-color: #fff;
 }
 
-.content h1 {
-  font-size: 1.25rem;
+h1 {
+  font-size: 2rem;
   font-family: "Coco", sans-serif;
   margin-bottom: 20px;
 }
 
-.content p {
-  font-size: 0.8rem;
+h2 {
+  font-size: 1.5rem;
+  font-family: "Coco", sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* New styles for sidebar */
-.sidebar {
-  position: fixed;
-  top: 30%;
-  left: 5%;
-  width: 250px;
+.join-us {
+  padding: 20px 20px;
+  text-align: center;
+  background-color: #efd58c;
+  padding-bottom: 100px;
+}
+
+.the-wedding {
+  padding: 20px 20px;
+  text-align: leading;
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+.photo-gallery {
+  padding: 0 40px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: -75px 0;
+}
+
+.photo-gallery img {
+  width: 100%;
   height: 100%;
-  padding: 15px;
-  z-index: 1000; /* Ensure sidebar is on top */
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  font-family: "Coco", sans-serif;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  position: center;
 }
 
-.sidebar ul {
+.the-wedding-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.the-wedding-image-container {
+  width: 40%;
+  margin-right: 20px; /* Space between the image and the list */
+}
+
+.the-wedding-image-container img {
+  width: 100%;
+  height: auto; /* Keep image aspect ratio */
+  object-fit: cover;
+}
+
+.the-wedding-numbered-list {
+  list-style-position: inside; /* Makes list numbers inside the container */
+  font-size: 1.2em;
+}
+
+.the-wedding-numbered-list li {
+  margin-bottom: 10px;
   list-style-type: none;
-  padding: 0;
 }
 
-.sidebar ul li {
-  margin: 20px 0;
+#map {
+  height: 60vw;
+  margin-top: 20px;
 }
 
-.sidebar ul li a {
-  text-decoration: none;
-  color: rgb(255, 255, 255, 0.75);
+.gmp-map {
+  height: 60vw;
+  margin-top: 20px;
+}
+
+.getting-there {
+  padding: 20px 20px;
+  background-color: #efd58c;
+}
+
+.square-button {
+  font-size: 1rem;
+  font-family: "Coco", sans-serif;
   font-weight: bold;
-  display: block;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Small shadow */
+  margin-bottom: 20px;
 }
 
-.sidebar ul li a:hover {
-  color: #efd58c;
+.full-width-image {
+  width: 100vw; /* Full width of the viewport */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove inline spacing */
+}
+
+.triple-image-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.triple-image-container img {
+  width: calc(
+    33.33% - 20px
+  ); /* Distributes space between 3 images, with 20px total padding between them */
+  object-fit: cover;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #efd58c;
 }

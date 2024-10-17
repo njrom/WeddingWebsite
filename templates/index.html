@@ -17,29 +17,78 @@
     </section>
 
     <!-- Content Sections -->
-    <section id="section1" class="content">
-      <h1>Join us on our special day!</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        rutrum pretium diam ut ultrices. Cras dictum fringilla facilisis. Etiam
-        purus ipsum, tempus et malesuada ut, ullamcorper ac arcu. Pellentesque
-        malesuada purus erat, vitae mattis lacus varius eu. Pellentesque non
-        mauris fringilla, ornare elit mattis, bibendum elit. Suspendisse et
-        justo cursus nibh venenatis gravida non at ipsum. Maecenas dui dui,
-        ultricies tristique luctus sed, pulvinar ut odio. Suspendisse eget
-        semper lectus. Interdum et malesuada fames ac ante ipsum primis in
-        faucibus. Sed auctor eros vitae ante interdum pulvinar.
-      </p>
+
+    <section id="section1" class="join-us">
+      <h2>We hope you can make it!</h2>
+
+      <button class="square-button" disabled>RSVP (Coming soon)</button>
     </section>
 
-    <section id="section2" class="content">
-      <h2>The Wedding</h2>
-      <p>Join us for a magical day to celebrate our love.</p>
+    <div class="photo-gallery">
+      <img id="photo" src="static/images/walking.jpg" />
+    </div>
+
+    <section id="section2" class="the-wedding">
+      <h2>The Wedding Weekend</h2>
+
+      <div class="the-wedding-layout">
+        <div class="the-wedding-image-container">
+          <img src="static/images/flower.jpg" />
+        </div>
+        <ol class="the-wedding-numbered-list">
+          <li>
+            <h4>Welcome Dinner</h4>
+            <p>Brewery Ardennes</p>
+            <p>Fri July 5th, 6 pm</p>
+          </li>
+          <li>
+            <h4>The Wedding</h4>
+            <p>Geneva on the Lake</p>
+            <p>Saturday, July 5th</p>
+            <p>Reception: 1 pm</p>
+            <p>Ceremony: 3 pm</p>
+            <p>Dinner: 5 pm</p>
+            <p>Bonfire: 9 pm</p>
+          </li>
+          <li>
+            <h4>Farewell Brunch</h4>
+            <p>Geneva on the Lake</p>
+            <p>Sun July 7th, 11 am</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <section id="section3" class="content">
-      <h2>RSVP</h2>
-      <p>Please let us know if you can attend.</p>
+    <section class="getting-there">
+      <h2>Getting There</h2>
+      <p>1001 Lochland Road Geneva,</p>
+      <p>New York 14456</p>
+      <div id="map"></div>
     </section>
+
+    <section class="triple-image-container">
+      <img src="static/images/flower.jpg" alt="Portrait 1" />
+      <img src="static/images/flower.jpg" alt="Portrait 2" />
+      <img src="static/images/flower.jpg" alt="Portrait 3" />
+    </section>
+
+    <section class="footer">
+      <h3>Email us with any questions</h3>
+      <ol class="the-wedding-numbered-list">
+        <li>
+          <a href="mailto:wedding@njrom.com">wedding@njrom.com</a>
+        </li>
+        <li>
+          <div id="countdown"></div>
+        </li>
+      </ol>
+    </section>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpivphqwgkGLz3NDpop4bEWpw7T-n2V2E&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="static/script.js"></script>
   </body>
 </html>
