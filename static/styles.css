@@ -80,10 +80,14 @@ body {
   color: #434343;
 }
 
+a {
+  color: #434343;
+}
+
 h1 {
   font-size: 1.75rem;
   font-weight: semibold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -96,6 +100,7 @@ p {
   font-style: regular;
   max-width: 800px;
   margin: 0 auto;
+  text-align: leading;
 }
 
 section {
@@ -109,6 +114,10 @@ section:nth-child(even) {
 .join-us {
   text-align: center;
   padding-bottom: 100px;
+}
+
+.join-us p {
+  padding: 0 100px;
 }
 
 .photo-gallery {
@@ -192,15 +201,92 @@ section:nth-child(even) {
 .triple-image-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
 }
 
 .triple-image-container img {
   width: calc(
-    33.33% - 20px
+    33.33% - 6.67px
   ); /* Distributes space between 3 images, with 20px total padding between them */
   object-fit: cover;
 }
 
+/* Apply the gap between only the middle images */
+.triple-image-container img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.questions h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.questions p {
+  padding-left: 20px;
+}
+
+.registry {
+  text-align: center;
+}
+
+.registry p {
+  padding: 0 100px;
+}
+
 .footer {
+}
+
+.timeline {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto 10px auto;
+  border-left: 1px dashed #ababab;
+}
+
+.timeline--block {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.timeline--dot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  border: 3px solid var(--color-primary);
+  left: -8px;
+  background: white;
+}
+
+.timeline--time {
+  flex-basis: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.timeline--info {
+  flex: 1;
+}
+
+.timeline--info--title {
+  font-weight: bold;
+}
+
+.timeline--info--secondary {
+  font-size: 17px;
+}
+
+.timeline--info--link {
+  font-size: 14px;
+}
+
+.timeline--info--location {
+  margin-top: 5px;
+  display: flex;
+  font-size: 14px;
+}
+
+.timeline--info--location--icon {
+  flex-basis: 25px;
 }

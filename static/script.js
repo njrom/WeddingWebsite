@@ -28,18 +28,19 @@ var countdownFunction = setInterval(function () {
 
   // Output the result in an element with id="countdown"
   document.getElementById("countdown").innerHTML =
-    days + " days " + hours + " hours " + minutes + " minutes!";
+    days + " days " + hours + " hours " + minutes + " minutes";
 
   if (distance < 0) {
     clearInterval(countdownFunction);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML =
+      "What are you doing here still? The wedding happened already!";
   }
 }, 1000);
 // Marker data with lat/long and address
 const markers = [
   {
     position: { lat: 42.84864475233129, lng: -76.97952861852876 }, // Geneva on the Lake
-    title: "Wedding Venue: Geneva on the Lake",
+    title: "Geneva on the Lake",
     address: "123 Lakeview Rd, Geneva, NY 14456", // Example address
   },
 ];
