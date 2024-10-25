@@ -42,11 +42,6 @@ const markers = [
     title: "Wedding Venue: Geneva on the Lake",
     address: "123 Lakeview Rd, Geneva, NY 14456", // Example address
   },
-  {
-    position: { lat: 42.82955236135263, lng: -77.00024651324374 }, // Brewery Ardennes
-    title: "Welcome Dinner: Brewery Ardennes",
-    address: "789 Brewery Ln, Geneva, NY 14456", // Example address
-  },
 ];
 
 // Initialize the map

@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+/* Hero Section Stuff */
+
 @font-face {
   font-family: "Andrea";
   src: url("fonts/Andrea.ttf") format("truetype");
@@ -18,20 +20,11 @@
 }
 
 @font-face {
-  font-family: "Penna";
-  src: url("fonts/penna.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Coco";
-  src: url("fonts/Coco-Light.ttf") format("opentype");
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  justify-content: center;
-  align-items: center;
+  font-family: "Ibarra_Real_Nova";
+  src: url("fonts/Ibarra_Real_Nova/IbarraRealNova-VariableFont_wght.ttf")
+    format("truetype"); /* Path to your OTF file */
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Fixed Background Image Section */
@@ -77,56 +70,53 @@ body {
   font-size: 1.5rem;
 }
 
-/* Content Sections */
-.content {
-  padding: 20px 20px;
-  text-align: center;
-  height: 400px;
-  background-color: #fbefce; /* Slightly transparent white */
-}
+/* Everything Else */
 
-.content:nth-child(odd) {
-  background-color: #fff;
+body {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ibarra_Real_Nova", sans-serif;
+  color: #434343;
 }
 
 h1 {
-  font-size: 2rem;
-  font-family: "Coco", sans-serif;
+  font-size: 1.75rem;
+  font-weight: semibold;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-family: "Coco", sans-serif;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: semibold;
 }
 
 p {
   font-size: 1rem;
+  font-style: regular;
   max-width: 800px;
   margin: 0 auto;
 }
 
+section {
+  padding: 20px;
+}
+
+section:nth-child(even) {
+  background-color: #f3d9a6;
+}
+
 .join-us {
-  padding: 20px 20px;
   text-align: center;
-  background-color: #efd58c;
   padding-bottom: 100px;
 }
 
-.the-wedding {
-  padding: 20px 20px;
-  text-align: leading;
-  background-color: #fff;
-  padding-top: 100px;
-}
-
 .photo-gallery {
-  padding: 0 40px;
+  padding: 20px;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin: -75px 0;
+  margin: -100px 0;
 }
 
 .photo-gallery img {
@@ -135,6 +125,11 @@ p {
   object-fit: cover;
   transition: opacity 1s ease-in-out;
   position: center;
+}
+
+.the-wedding {
+  text-align: leading;
+  padding-top: 100px;
 }
 
 .the-wedding-layout {
@@ -175,13 +170,10 @@ p {
 }
 
 .getting-there {
-  padding: 20px 20px;
-  background-color: #efd58c;
 }
 
 .square-button {
   font-size: 1rem;
-  font-family: "Coco", sans-serif;
   font-weight: bold;
   display: inline-block;
   background-color: white;
@@ -200,7 +192,6 @@ p {
 .triple-image-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
   gap: 20px;
 }
 
@@ -212,6 +203,4 @@ p {
 }
 
 .footer {
-  padding: 20px;
-  background-color: #efd58c;
 }
