@@ -1,17 +1,59 @@
-const photos = ["static/images/walking.jpg", "static/images/kissing.jpg"];
+const hPhotos = [
+  "static/images/h1.jpg",
+  "static/images/h2.jpg",
+  "static/images/h3.jpg",
+  "static/images/h4.jpg",
+  "static/images/h5.jpg",
+  "static/images/h6.jpg",
+];
+const vPhotos1 = [
+  "static/images/v2.jpg",
+  "static/images/v3.jpg",
+  "static/images/v4.jpg",
+  "static/images/v5.jpg",
+  "static/images/v6.jpg",
+  "static/images/v7.jpg",
+  "static/images/v8.jpg",
+  "static/images/v9.jpg",
+  "static/images/v10.jpg",
+  "static/images/v11.jpg",
+];
 
-let currentIndex = 0;
-const photoElement = document.getElementById("photo");
+const vPhotos2 = [
+  "static/images/v12.jpg",
+  "static/images/v13.jpg",
+  "static/images/v14.jpg",
+  "static/images/v15.jpg",
+  "static/images/v16.jpg",
+  "static/images/v17.jpg",
+  "static/images/v18.jpg",
+  "static/images/v19.jpg",
+  "static/images/v20.jpg",
+  "static/images/v21.jpg",
+  "static/images/v22.jpg",
+];
+
+let currentHIndex = 0;
+const hPhotoElement = document.getElementById("photo");
+
+let currentVIndex = 0;
+const vPhotoElement1 = document.getElementById("photo1");
+const vPhotoElement2 = document.getElementById("photo2");
 
 function cyclePhotos() {
-  currentIndex = (currentIndex + 1) % photos.length;
-  photoElement.src = photos[currentIndex];
+  currentHIndex = (currentHIndex + 1) % hPhotos.length;
+  hPhotoElement.src = hPhotos[currentHIndex];
+  currentVIndex = (currentVIndex + 1) % vPhotos1.length;
+  setTimeout(function () {
+    vPhotoElement2.src = vPhotos2[currentVIndex];
+  }, 1000);
+  vPhotoElement1.src = vPhotos1[currentVIndex];
 }
 
-setInterval(cyclePhotos, 3000); // Change photo every 3 seconds
+setInterval(cyclePhotos, 4000); // Change photo every 3 seconds
 
 // Set the date we're counting down to (July 5th, 2025 @ 1 PM)
-var countDownDate = new Date("Jul 5, 2025 13:00:00").getTime();
+var countDownDate = new Date("Jul 5, 2025 16:00:00").getTime();
 
 // Update the countdown every second
 var countdownFunction = setInterval(function () {
