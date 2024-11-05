@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lauren and Nick's Wedding</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <!-- Main Section with the Background Image -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Lauren and Nick</h1>
+        <p>Geneva, New York</p>
+        <p>July 5th, 2025</p>
+      </div>
+    </section>
+
+    <!-- Content Sections -->
+
+    <section id="section1" class="join-us">
+      <h1>We can’t wait to share our special day with you!</h1>
+
+      <p>
+        Please check back for updates, as we’ll be adding more details as the
+        day grows closer.
+      </p>
+    </section>
+
+    <div class="photo-gallery">
+      <img id="photo" src="static/images/h1.jpg" />
+    </div>
+
+    <div></div>
+    <section class="the-wedding">
+      <h1>The Wedding Weekend</h1>
+      <h2>Friday, July 4th</h2>
+      <div class="timeline">
+        <div class="timeline--block">
+          <div class="timeline--dot"></div>
+          <div class="timeline--time">TBD</div>
+          <div class="timeline--info">
+            <div class="timeline--info--title">Welcome Dinner</div>
+          </div>
+        </div>
+      </div>
+      <h2>Saturday, July 5th</h2>
+      <div class="timeline">
+        <div class="timeline--block">
+          <div class="timeline--dot"></div>
+          <div class="timeline--time">4:00 pm</div>
+          <div class="timeline--info">
+            <div class="timeline--info--title">Ceremony</div>
+          </div>
+        </div>
+        <div class="timeline--block">
+          <div class="timeline--dot"></div>
+          <div class="timeline--time">4:30 pm</div>
+          <div class="timeline--info">
+            <div class="timeline--info--title">Cocktail Hour</div>
+          </div>
+        </div>
+        <div class="timeline--block">
+          <div class="timeline--dot"></div>
+          <div class="timeline--time">6:00 pm</div>
+          <div class="timeline--info">
+            <div class="timeline--info--title">Dinner and Dancing</div>
+          </div>
+        </div>
+        <div class="timeline--block">
+          <div class="timeline--dot"></div>
+          <div class="timeline--time">10:00 pm</div>
+          <div class="timeline--info">
+            <div class="timeline--info--title">Bonfire on the Bluff</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Sunday, July 6th</h2>
+      <div class="timeline">
+        <div class="timeline--block">
+          <div class="timeline--dot"></div>
+          <div class="timeline--time">TBD</div>
+          <div class="timeline--info">
+            <div class="timeline--info--title">Farewell Brunch</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="getting-there">
+      <h1>Getting There</h1>
+      <h2>Our Venue</h2>
+      <div class="text-image-section">
+        <div class="text-container">
+          <h4>Geneva On The Lake</h4>
+          <a href="https://maps.app.goo.gl/XiSovDvVpBipzeWu5">
+            1001 Lochland Road Geneva,<br />
+            New York 14456 </a
+          ><br /><br />
+          <a href="https://GenevaOnTheLake.com">GenevaOnTheLake.com</a>
+        </div>
+        <div class="image-container">
+          <img src="static/images/GOTL.jpg" alt="Description of image" />
+        </div>
+      </div>
+
+      <h2>Hotels</h2>
+
+      <p>
+        Hotel blocks will be available at Geneva on the Lake as well as local
+        hotels in Geneva. More details to come.
+      </p>
+      <div id="map"></div>
+    </section>
+
+    <section class="triple-image-container">
+      <img id="photo1" src="static/images/v1.jpg" alt="Portrait 1" />
+      <img id="photo2" src="static/images/v12.jpg" alt="Portrait 2" />
+    </section>
+
+    <section class="registry">
+      <h1>Registry</h1>
+      <p>
+        Thank you so much for your generosity and love! We’re still finalizing
+        our registry and will be sharing those details soon. Please check back
+        for updates!
+      </p>
+    </section>
+
+    <section class="questions">
+      <h1>FAQ</h1>
+      <h2>What should I wear?</h2>
+      <p>
+        Our wedding dress code is cocktail attire. For women, this typically
+        means a midi- or knee-length dress or a stylish jumpsuit. For men, a
+        suit or blazer with dress pants and a tie is appropriate. We encourage
+        everyone to dress up but also be comfortable enough to celebrate with
+        us!
+      </p>
+
+      <h2>Will your wedding be indoors or outdoors?</h2>
+      <p>
+        Both our ceremony and reception will take place outdoors, with the
+        reception held under a tent. Since our wedding is in July, you can
+        expect warm and humid weather. We recommend dressing comfortably and
+        considering lighter fabrics to stay cool throughout the day!
+      </p>
+
+      <h2>What is the best way to get to the venue?</h2>
+      <p>
+        Their is plenty of parking available at the venue for those who plan to
+        drive. If you prefer not to drive, ride-share services as well as local
+        taxi options are available in the area.
+      </p>
+    </section>
+
+    <section class="footer">
+      <h2>Email us with any questions</h2>
+      <ol class="the-wedding-numbered-list">
+        <li>
+          <a href="mailto:wedding@njrom.com">wedding@njrom.com</a>
+        </li>
+        <li>
+          <div id="countdown"></div>
+        </li>
+      </ol>
+    </section>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpivphqwgkGLz3NDpop4bEWpw7T-n2V2E&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="static/script.js"></script>
+  </body>
+</html>
